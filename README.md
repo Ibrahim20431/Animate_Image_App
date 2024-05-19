@@ -3,7 +3,8 @@
 - `Fade In` <=> `Fade Out`
 - `Slide Left` <=> `Slide Right`
 - `Slide Up` <=> `Slide Down`
-- `Rotate` and `Move`
+- `Rotate`
+- `Move`
 
 https://github.com/Ibrahim20431/Animate_Image_App/assets/76252110/eda7b43f-0f53-4c8b-a038-90b245fff5ca
 
