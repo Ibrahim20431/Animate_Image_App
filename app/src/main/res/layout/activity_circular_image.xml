@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CircularImageActivity" >
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/ImageToCircle"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:src="@drawable/person1"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10dp"
+        app:civ_shadow_color="#3f51b5" />
+
+    <SeekBar
+        android:id="@+id/border_width"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:max="100"
+        android:padding="@dimen/_10sdp"
+        android:progress="20"
+        android:thumb="@drawable/garnet" />
+
+    <SeekBar
+        android:id="@+id/shadow_radius"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:max="50"
+        android:padding="@dimen/_10sdp"
+        android:progress="10"
+        android:thumb="@drawable/garnet" />
+
+<!--    <SeekBar-->
+<!--        android:id="@+id/border_color"-->
+<!--        style="@android:style/Widget.Material.SeekBar.Discrete"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="@dimen/_16sdp"-->
+<!--        android:max="1000"-->
+<!--        android:padding="@dimen/_20sdp"-->
+<!--        android:progress="1"-->
+<!--        android:thumb="@drawable/garnet" />-->
+
+    <com.larswerkman.lobsterpicker.LobsterPicker
+        android:id="@+id/lobsterpicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</LinearLayout>

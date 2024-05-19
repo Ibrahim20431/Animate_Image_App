@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:src="@drawable/person1"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:elevation="@dimen/_30sdp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_8sdp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/zoom_in"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zoom_in"
+                    android:textSize="@dimen/_18sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:elevation="@dimen/_20sdp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/zoom_out"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zoom_out"
+                    android:textSize="@dimen/_18sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:elevation="@dimen/_20sdp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/fade_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fade_in"
+                    android:textSize="@dimen/_18sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:elevation="@dimen/_20sdp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/fade_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fade_out"
+                    android:textSize="@dimen/_18sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:elevation="@dimen/_20sdp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/slide_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slide_left"
+                    android:textSize="@dimen/_18sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:elevation="@dimen/_20sdp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/slide_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slide_right"
+                    android:textSize="@dimen/_18sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:elevation="@dimen/_20sdp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/slide_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slide_up"
+                    android:textSize="@dimen/_18sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:elevation="@dimen/_20sdp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/slide_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slide_down"
+                    android:textSize="@dimen/_18sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:elevation="@dimen/_20sdp"/>
+            </TableRow>
+
+<!--            <TableRow-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginBottom="@dimen/_8sdp">-->
+
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/zoomIn_and_FadeIn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/zoomIn_and_fadeIn"-->
+<!--                    android:textSize="@dimen/_18sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_8sdp"-->
+<!--                    android:padding="@dimen/_15sdp"-->
+<!--                    android:elevation="@dimen/_20sdp"/>-->
+
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/zoomOut_and_FadeOut"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/zoomOut_and_fadeOut"-->
+<!--                    android:textSize="@dimen/_18sdp"-->
+<!--                    android:padding="@dimen/_15sdp"-->
+<!--                    android:elevation="@dimen/_20sdp"/>-->
+<!--            </TableRow>-->
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/rotate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rotate"
+                    android:textSize="@dimen/_18sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:elevation="@dimen/_20sdp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/move"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/move"
+                    android:textSize="@dimen/_18sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:elevation="@dimen/_20sdp"/>
+            </TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/circular_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Circlar Image"
+                android:textSize="@dimen/_18sdp"
+                android:padding="@dimen/_15sdp"
+                android:elevation="@dimen/_20sdp"/>
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
